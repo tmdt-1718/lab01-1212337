@@ -1,1 +1,19 @@
-Hello World
+<div class="container">
+	<div class="row">
+		<% @albums.each do |album| %>
+		<div class="col-md-6 mt-3">
+			<div class="card-deck" >
+				<div class="card">
+					<img class="card-img-top" src="">
+					<%= image_tag(album.image, class: 'list_image') %>
+					<div class="card-block">
+						<h4 class="card-title"><%=album.user_name%></h4>
+						<p class="card-text">Số lượt xem:<%=album.sum_view%></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>

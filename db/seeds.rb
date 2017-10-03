@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Album.delete_all
+
+Album.create!(image: 'bsidesandraritiesalbum.jpg', user_name: 'user1', sum_view: '1')
+Album.create!(image: 'hitchhikinmusic.jpg', user_name: 'user2', sum_view: '1')
+Album.create!(image: 'letthemusicplay.jpg', user_name: 'user3', sum_view: '10')
+Album.create!(image: 'musicismysavior.jpg', user_name: 'user4', sum_view: '100')
