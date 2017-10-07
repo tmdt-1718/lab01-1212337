@@ -1,3 +1,12 @@
-// Place all the styles related to the blog controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.blog-thumbnail{
+	@extend .card;
+
+	margin-bottom: 10px;
+
+	/* .card-text{
+		width: 250px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	} */
+}

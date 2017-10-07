@@ -2,14 +2,14 @@
 	<div class="row">
 		<% @albums.each do |album| %>
 		<div class="col-md-6 mt-3">
-			<div class="card-deck" >
+			<div class="card-body" >
 				<div class="card">
-					<img class="card-img-top" src="">
-					<%= image_tag(album.image, class: 'list_image') %>
+					<%= image_tag(album.image, class: 'card-img-top') %>
 					<div class="card-block">
-						<h4 class="card-title"><%=album.user_name%></h4>
-						<p class="card-text">Số lượt xem:<%=album.sum_view%></p>
+						<h4 class="card-title">Người tạo album: <%=album.user_name%></h4>
+						<p class="card-text">Số lượt xem: <%=album.sum_view%></p>
 					</div>
+					<a href="#" class="card-link">View</a>
 				</div>
 
 			</div>
