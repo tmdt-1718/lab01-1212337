@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-md-12">
+		<%= render partial: "thumbnail", locals: {a: @blg} %>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<%= link_to edit_blog_path(@blg.id), class: "btn btn-primary" do %>
+		Edit
+		<% end %>
+		<%= link_to blog_index_path, class: "btn btn-secondary" do %>
+		Back
+		<% end %>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<ul>
+			<%= @blg.comments.each do |comment| %>
+			<li><%= comment.content %></li>
+			<% end %>
+		</ul>
+	</div>
+</div>
