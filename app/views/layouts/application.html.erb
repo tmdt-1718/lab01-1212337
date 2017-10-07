@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webapp</title>
+	<%= csrf_meta_tags %>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="container">
+			<a href="/" class="navbar-brand">HMT</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsableContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsableContent">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="/albums" class="nav-link">Albums</a></li>
+					<li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<nav class="col-md-3 navbar-expand-md navbar-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="sidebarSupportedContent">
+					<ul class="nav flex-column">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Link1 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link3</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link4</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="col-md-9">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"><h4>Nhóm làm lab01</h4></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">MSSV:1212337</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">MSSV:1212338</div>
+			</div>
+		</div>
+	</footer> 
+</body>
+</html>
